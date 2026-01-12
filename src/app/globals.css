@@ -10,6 +10,15 @@
   --primary: #22333b;
   --primary-hover: #5e503f;
 
+  --button-primary: #22333b;
+  --button-primary-hover: #5e503f;
+  --button-secondary: #a9927d;
+  --button-secondary-hover: #5e503f;
+
+  --button-text: #f2f4f3;
+
+  --image-shadow: 0 0 60px rgba(34, 51, 59, 0.35);
+
   --border: #a9927d;
 }
 
@@ -24,6 +33,15 @@
   --primary-hover: #5e503f;
 
   --border: #22333b;
+
+  --button-primary: #a9927d;
+  --button-primary-hover: #5e503f;
+  --button-secondary: #22333b;
+  --button-secondary-hover: #5e503f;
+
+  --button-text: #0a0908;
+
+  --image-shadow: 0 0 60px rgba(169, 146, 125, 0.25);
 }
 
 
@@ -37,7 +55,15 @@
   --color-primary: var(--primary);
   --color-primary-hover: var(--primary-hover);
 
+  --color-button-primary: var(--button-primary);
+  --color-button-primary-hover: var(--button-primary-hover);
+  --color-button-secondary: var(--button-secondary);
+  --color-button-secondary-hover: var(--button-secondary-hover);
+  --color-button-text: var(--button-text);
+
   --color-border: var(--border);
+
+  --color-shadow: var(--image-shadow)
 }
 
 body {

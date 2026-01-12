@@ -1,17 +1,13 @@
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen justify-left items-center bg-background text-foreground p-10">
-        <h1 className="text-4xl font-bold text-primary">
-          Michael García – Full Stack Developer
-        </h1>
-
-        <p className="mt-4 text-secondary-text">
-          Portafolio en Next.js
-        </p>
+      <main className="bg-background text-foreground">
+        <Hero />
       </main>
+      
     </>
   );
 }
