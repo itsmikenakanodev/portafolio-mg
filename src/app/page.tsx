@@ -1,12 +1,17 @@
-
+import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold">
-        Mi Portafolio
-      </h1>
-    </main>
-    </div>
+    <>
+      <Navbar />
+      <main className="min-h-screen justify-left items-center bg-background text-foreground p-10">
+        <h1 className="text-4xl font-bold text-primary">
+          Michael García – Full Stack Developer
+        </h1>
+
+        <p className="mt-4 text-secondary-text">
+          Portafolio en Next.js
+        </p>
+      </main>
+    </>
   );
 }
