@@ -5,7 +5,7 @@ import { Mail, Github, MessageCircle } from "lucide-react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-24">
+        <section id="contact" className="py-8 md:py-12 lg:py-16">
             <div className="max-w-4xl mx-auto px-6 text-center">
 
                 <motion.div

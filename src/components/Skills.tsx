@@ -15,7 +15,7 @@ const containerVariants = {
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-24">
+        <section id="skills" className="py-8 md:py-12 lg:py-16">
             <div className="max-w-6xl mx-auto px-6">
 
                 <div className="max-w-2xl mb-12">
