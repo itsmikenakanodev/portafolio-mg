@@ -42,7 +42,7 @@ export default function ExperienceItem({
 
         <ul className="list-disc list-inside text-secondary-text space-y-1">
           {description.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={`${title}-desc-${index}`}>{item}</li>
           ))}
         </ul>
       </div>

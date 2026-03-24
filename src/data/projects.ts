@@ -28,7 +28,6 @@ export const projects = [
         stack: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
         links: {
             frontend: "https://github.com/itsmikenakanodev/portafolio-mg",
-            demo: "https://tudominio.com",
         },
         featured: false,
     },

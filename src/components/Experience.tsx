@@ -1,5 +1,6 @@
 import ExperienceItem from "./ExperienceItem";
 import { experienceData } from "@/data/experience";
+import { motion } from "framer-motion";
 
 
 export default function Experience() {
@@ -7,14 +8,20 @@ export default function Experience() {
     <section id="experience" className="py-8 md:py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-6">
 
-        <div className="max-w-2xl mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-2xl mb-12"
+        >
           <h2 className="text-3xl md:text-4xl font-bold">
             Experiencia
           </h2>
           <p className="mt-4 text-secondary-text">
             Experiencia técnica y proyectos desarrollados.
           </p>
-        </div>
+        </motion.div>
 
         <div className="relative space-y-12">
           {/* Línea */}
