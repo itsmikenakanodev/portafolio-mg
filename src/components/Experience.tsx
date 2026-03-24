@@ -1,3 +1,5 @@
+"use client";
+
 import ExperienceItem from "./ExperienceItem";
 import { experienceData } from "@/data/experience";
 import { motion } from "framer-motion";
