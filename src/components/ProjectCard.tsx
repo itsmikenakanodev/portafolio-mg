@@ -25,7 +25,7 @@ export function ProjectCard({
     return (
         <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold">{title}</h3>
-            <p className="text-sm text-gray-500 mt-2">{description}</p>
+            <p className="text-sm text-secondary-text mt-2">{description}</p>
 
             <ul className="flex flex-wrap gap-2 mt-4">
                 {stack.map((tech) => (

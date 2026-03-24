@@ -9,21 +9,29 @@ import { API_BASE_URL } from "@/config/api";
  */
 export default function ApiWarmup() {
     useEffect(() => {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+
         const warmupApi = async () => {
             try {
-                await fetch(API_BASE_URL + "/API/Atletismo/campeonatos", {
+                await fetch(`${API_BASE_URL}/API/Atletismo/campeonatos`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    signal: AbortSignal.timeout(5000),
+                    signal: controller.signal,
                 });
             } catch {
+                // Silent fail - la API puede no estar disponible
             }
         };
 
-        // Llamamos a la API cuando el componente se monta
         warmupApi();
+
+        return () => {
+            clearTimeout(timeoutId);
+            controller.abort();
+        };
     }, []);
 
     // Este componente no renderiza nada
