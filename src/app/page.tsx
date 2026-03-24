@@ -5,13 +5,15 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import ApiWarmup from "@/components/ApiWarmup";
+import InteractiveCanvas from "@/components/InteractiveCanvas";
 
 export default function Home() {
   return (
     <>
+      <InteractiveCanvas />
       <ApiWarmup />
       <Navbar />
-      <main className="bg-background text-foreground">
+      <main className="text-foreground">
         <Hero />
         <Skills />
         <Projects />
