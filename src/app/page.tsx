@@ -4,6 +4,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
+import Certifications from "@/components/Certifications";
 import ApiWarmup from "@/components/ApiWarmup";
 import InteractiveCanvas from "@/components/InteractiveCanvas";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="text-foreground">
         <Hero />
         <Skills />
+        <Certifications />
         <Projects />
         <Experience />
         <Contact />

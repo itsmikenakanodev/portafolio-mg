@@ -21,6 +21,27 @@ export const projects = [
         featured: true,
     },
     {
+        id: "clinical-atelier",
+        title: "Clinical Atelier — Gestión Dental",
+        description:
+          "Sistema de gestión para clínicas dentales con módulos de autenticación, agenda de turnos, administración de pacientes y equipo profesional. Arquitectura modular con Vue 3 y backend en Spring Boot.",
+        stack: [
+          "Spring Boot",
+          "PostgreSQL",
+          "Vue 3",
+          "Pinia",
+          "TypeScript",
+          "Tailwind CSS",
+          "Axios",
+        ],
+        links: {
+          frontend: "https://github.com/itsmikenakanodev/dental-frontend",
+          backend: "",
+          demo: "https://dental-frontend-eight-gray.vercel.app"
+        },
+        featured: true,
+    },
+    {
         id: "portfolio",
         title: "Portafolio Personal",
         description:

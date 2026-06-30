@@ -1,11 +1,11 @@
 export const skills = [
     {
       title: "Frontend",
-      skills: ["React", "Next.js", "Vue.js", "Tailwind CSS"],
+      skills: ["React", "Next.js", "Angular", "Vue.js", "Tailwind CSS"],
     },
     {
       title: "Backend",
-      skills: ["Java", "Spring Boot", "REST APIs"],
+      skills: ["Java", "Spring Boot", "Python", "Node.js", "REST APIs"],
     },
     {
       title: "Base de Datos",
@@ -13,6 +13,6 @@ export const skills = [
     },
     {
       title: "DevOps",
-      skills: ["Azure", "Firebase", "Docker"],
+      skills: ["AWS", "Azure", "Terraform", "Docker", "Firebase"],
     },
   ];
